@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      
+      #container {
+        background-color: rgb(255, 255, 0);
+        display: flex;
+        border: 6px solid blue;
+        flex-direction: row;
+        width: 50vw;
+        /* height: 32vh; */
+        padding: 1px;
+        margin: 1px;
+      }
+      .boxleft {
+        background-color: aqua;
+        border: 6px solid orange;
+        height: 28.5vh;
+        width: 22.5vw;
+        padding: 12px;
+        margin: 6px;
+        display: flex;
+        flex-direction: column;
+      }
+      .boxright {
+        background-color: rgb(255, 174, 174);
+        border: 6px solid rgb(169, 49, 255);
+        /* height: 29vh;
+        width: 20vw; */
+        height: 29vh;
+        width: 23vw;
+        padding: 10px;
+        margin: 6px;
+        display: flex;
+        flex-grow: 1000000px;
+    }
+
+      img {
+        transform: scale(1.07);
+        /* height: 200px;
+        width: 210px; */
+        height: 29vh;
+        width: 25vw;  
+    }
+      p {
+        background-color: rgb(239, 248, 255);
+        border: 3px solid red;
+      }
+      @media (max-width:842px) {
+        #container{
+          flex-direction: column;
+          width: 32.5vh;
+        }
+      }
+    </style>
+  </head>
+ 
+  <body>
+    <div id="container">
+      <div class="boxleft">
+        <p>Text 1</p>
+        <p>Text 2</p>
+      </div>
+      <div class="boxright">
+        <img src="g.webp" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

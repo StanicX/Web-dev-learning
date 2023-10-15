@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>good ui</title>
+    <link rel="stylesheet" href="nav.css" />
+    <style>
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0%;
+            /* width: 100%; */
+            background-color: rgba(4, 4, 4, 0.797);
+            /* Add a background color for the navbar */
+            z-index: 2;
+        }
+
+        /* Add other styles for your navigation items (ul, li, a) here */
+
+        * {
+            font-family: 'Poppins', sans-serif;
+            /* font-family: gilroy; */
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0;
+        }
+
+        body {
+            padding: 10px;
+            height: 100vh;
+            width: 100vw;
+            /* background-image: url(https://lh3.googleusercontent.com/drive-viewer/AITFw-zdrRjTsp-jV9l7Qs8EDKj-lpi002YyVxnEKxhVJtvETUABrnac15mihqFG9VntIupkEh1B_c367n8ixNtGszhWcLiG=s1600); */
+            /* backdrop-filter: blur(4px); */
+            background-size:cover;
+            /* background-repeat: no-repeat; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-image: linear-gradient(180deg, rgb(255, 176, 30) 300px, rgb(255, 255, 255) 500px, rgb(132, 226, 0) 600px); */
+            /* background-image: linear-gradient(250deg,rgb(255, 151, 86),rgb(83, 152, 255),rgb(156, 255, 51)); */
+            background-image: linear-gradient( 135deg, #97ABFF 10%, #123597 100%);
+
+        }
+
+        #container {
+            box-shadow: -0px -0px 10px 10px rgba(0, 0, 0, 0.551);
+            background-color: rgba(255, 255, 255, 0.436);
+            border-radius: 30px;
+            padding: 20px;
+            padding-left: 50px;
+            /* height: 500px; */
+            /* width: 1000px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(4px);
+        }
+
+        .loginform {
+            border-radius: 12px;
+            /* padding: 20px; */
+            box-shadow: -0px -0px 10px 5px rgba(68, 68, 68, 0.469);
+            background-color: rgba(255, 255, 255, 0.590);
+            /* height: 400px; */
+            width: 400px;
+            padding: 10px;
+        }
+
+        .img2 {
+            padding-left: 20px;
+            /* background-color: aqua; */
+        }
+
+        #log {
+            padding-bottom: 0px;
+            /* background-color: aqua; */
+            margin-bottom: 0px;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+        p {
+            /* background-color: aquamarine; */
+            margin-top: 0px;
+        }
+
+        #buttonss {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        #email {
+            border: 2px solid black;
+            padding: 7px 65px;
+            padding-left: 15px;
+            border-radius: 4px;
+            background-color: rgb(255, 255, 255);
+            margin-bottom: 6px;
+        }
+
+        #password {
+            border: 2px solid black;
+            padding: 7px 65px;
+            padding-left: 15px;
+            border-radius: 4px;
+            background-color: rgb(255, 255, 255);
+            margin-bottom: 6px;
+        }
+
+        #radio {
+            list-style: square;
+            background-color: aqua;
+        }
+
+        #btn1 {
+            background-color: rgba(187, 165, 255, 0.735);
+        }
+
+        #loginbtn {
+            margin: 0px;
+            padding-top: 2px;
+            display: flex;
+            justify-content: center;
+        }
+
+        #btn1 {
+            font-size: 27px;
+            font-weight: 500;
+            padding: 4px 120px;
+            border-radius: 20px;
+        }
+
+        #btn2 {
+            font-size: 15px;
+            font-weight: 500;
+            padding: 10px 10px;
+            border-radius: 30px;
+            gap: 6px;
+            display: flex;
+            justify-content: center;
+        }
+
+        #btn3 {
+            font-size: 15px;
+            font-weight: 500;
+            gap: 3px;
+            padding: 10px 10px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+        #txtfld {
+            font-weight: 600;
+            /* margin: -10px 20px; */
+            padding: 0px 50px;
+            /* backdrop-filter: blur(4px); */
+        }
+
+        #email {
+            margin-bottom: 20px;
+        }
+
+        #remme {
+            display: flex;
+            justify-content: end;
+            gap: 5px;
+            font-weight: 300;
+            padding-top: 10px;
+        }
+
+        .img2 a img {
+            height: 500px;
+            width: 550px;
+        }
+
+        #buttonss #btn2 img {
+            height: 20px;
+            width: 20px;
+        }
+
+        #buttonss #btn3 img {
+            height: 25px;
+            width: 25px;
+        }
+
+        @media (max-width:643px) {
+            .container {
+                background-image: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo"><img src="./images/Screenshot_20230914_114307-1-removebg-preview.png" alt="alogo"></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Explore more</a></li>
+                <li><a href="#">Our motive</a></li>
+            </ul>
+            <button class="buttonq"><a href="#">Contact Us</a>
+        </nav>
+    </header>
+    </div>
+    <div id="container">
+        <div class="loginform">
+            <p id="log">Login</p>
+            <p>Doesn't have an account yet?<a href="#">Sign Up</a></p>
+            </br>
+            <div id="txtfld">
+                <label for="email">Email Address</label>
+                <br>
+                <input type="email" id="email" placeholder="you@example.com">
+                <br>
+                <label for="password">Password</label>
+                <br>
+                <input type="password" id="password" placeholder="Enter your password">
+                <br>
+                <div id="remme">
+                    <input type="radio" id="Ladio">
+                    <label for="Ladio">Remember me</label>
+                </div>
+            </div>
+            <br>
+            <div id="loginbtn"><button id="btn1">Login</button></div>
+            <br>
+            <!-- <hr class="signpp"> -->
+            <!-- <hr id="or"><hr class="custom-line">or signup with</p> -->
+            <div>
+            </div>
+            <div id="buttonss">
+                <button id="btn2"> <img src="https://static.cdnlogo.com/logos/g/23/goolge-icon-thumb.png"
+                        alt="google logo">Google</button>
+                <br>
+                <button id="btn3"> <img src="https://i.ibb.co/FbvGtRH/logo-facebookpng-32202.png"
+                        alt="">Facebook</button>
+            </div>
+        </div>
+        <div class="img2">
+            <!-- <img src="https://ibb.co/b5fRm4W" alt="apic" height="400px" width="450px"> -->
+       
+            <a href="https://ibb.co/YtHjhwb"><img src="https://i.ibb.co/nDxkjtR/yy.png" alt="yy" border="0"></a>
+        </div>
+        <!-- </div> -->
+</body>
+
+</html>

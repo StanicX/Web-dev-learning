@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good UI</title>
+    <link rel="stylesheet" href="nav.css" />
+    <style>
+        /* Reset default styles */
+        * {
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(4, 4, 4, 0.797);
+            z-index: 2;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 30px;
+        }
+
+        ul {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+            padding-left: 20px;
+            padding-top: 15px;
+        }
+
+        li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Button */
+        .buttonq {
+            background-color: rgba(60, 110, 248, 0.735);
+            padding: 8px 20px;
+            border-radius: 17px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Main Content */
+        body {
+            padding: 10px;
+            min-height: 100vh;
+            background-image: linear-gradient(135deg, #97ABFF 10%, #123597 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #container {
+            box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.551);
+            background-color: rgba(255, 255, 255, 0.436);
+            border-radius: 30px;
+            padding: 20px;
+            padding-left: 50px;
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(4px);
+        }
+
+        /* Login Form */
+        .loginform {
+            border-radius: 12px;
+            box-shadow: 10px 10px 10px 5px rgba(68, 68, 68, 0.469);
+            background-color: rgba(255, 255, 255, 0.590);
+            width: 100%;
+            padding: 10px;
+        }
+
+        #log {
+            font-size: 30px;
+            font-weight: bolder;
+            margin: 0;
+            padding-bottom: 0px;
+        }
+
+        p {
+            margin: 0;
+            margin-top: 10px;
+        }
+
+        /* Form Fields */
+        #txtfld {
+            padding: 0px 50px;
+        }
+
+        label, input {
+            display: block;
+            width: 100%;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            border: 2px solid black;
+            padding: 7px 15px;
+            border-radius: 4px;
+            background-color: rgb(255, 255, 255);
+            margin-bottom: 6px;
+        }
+
+        #remme {
+            display: flex;
+            justify-content: flex-end;
+            gap: 5px;
+            font-weight: 300;
+            padding-top: 10px;
+        }
+
+        input[type="radio"] {
+            list-style: square;
+            background-color: aqua;
+        }
+
+        /* Login Button */
+        #loginbtn {
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+        }
+
+        #btn1 {
+            font-size: 27px;
+            font-weight: 500;
+            padding: 10px 40px;
+            border-radius: 20px;
+            background-color: rgba(187, 165, 255, 0.735);
+            cursor: pointer;
+        }
+
+        /* Social Buttons */
+        #buttonss {
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 20px;
+        }
+
+        #btn2, #btn3 {
+            font-size: 15px;
+            font-weight: 500;
+            padding: 10px 20px;
+            border-radius: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        #btn2 img, #btn3 img {
+            height: 25px;
+            width: 25px;
+            margin-right: 6px;
+        }
+
+        /* Image */
+        .img2 {
+            padding-left: 20px;
+        }
+
+        .img2 a img {
+            height: auto;
+            max-width: 100%;
+        }
+
+        @media (max-width: 643px) {
+            #container {
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo"><img src="./images/Screenshot_20230914_114307-1-removebg-preview.png" alt="alogo"></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Explore more</a></li>
+                <li><a href="#">Our motive</a></li>
+            </ul>
+            <button class="buttonq"><a href="#">Contact Us</a></button>
+        </nav>
+    </header>
+    <div id="container">
+        <div class="loginform">
+            <p id="log">Login</p>
+            <p>Don't have an account yet? <a href="#">Sign Up</a></p>
+            <div id="txtfld">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="you@example.com">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+                <div id="remme">
+                    <input type="radio" id="radio">
+                    <label for="radio">Remember me</label>
+                </div>
+            </div>
+            <div id="loginbtn"><button id="btn1">Login</button></div>
+            <div id="buttonss">
+                <button id="btn2"> <img src="https://static.cdnlogo.com/logos/g/23/goolge-icon-thumb.png"
+                        alt="google logo">Google</button>
+                <button id="btn3"> <img src="https://i.ibb.co/FbvGtRH/logo-facebookpng-32202.png"
+                        alt="">Facebook</button>
+            </div>
+        </div>
+        <div class="img2">
+            <a href="https://i.ibb.co/whvrgn0/cut.png"><img src="./images/yy.png" alt="cut"></a>
+        </div>
+    </div>
+</body>
+</html>

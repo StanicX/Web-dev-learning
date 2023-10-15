@@ -1,0 +1,9 @@
+
+td,
+th{
+    border: 2px solid rgb(0, 94, 255);
+    resize: both;
+    overflow: auto;
+;
+
+}

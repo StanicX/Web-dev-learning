@@ -1,0 +1,10 @@
+table {
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #ffffff; /* Change this to your desired background color */  
+}
+table td, table th {
+    padding: 1px;
+    border: 1px solid #00bbff; /* Change this to your desired border color */
+  }
